@@ -3,7 +3,7 @@ router = express.Router(),
 itemCtrl = require('./item-controller')
 
 router.get('/hello', itemCtrl.getWorld);
-router.get('/hello', itemCtrl.postWorld);
+router.post('/hello', itemCtrl.postWorld);
 
 router.get('/hello/:foo/:bar', function(req,res){
 });
